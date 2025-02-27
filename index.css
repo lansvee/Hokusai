@@ -1,0 +1,137 @@
+/* FONTS & BASE STYLES */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Overwrite some Bootstrap defaults */
+.navbar-dark .navbar-nav .nav-link {
+  color: #aaa;
+  transition: color 0.3s;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+.navbar-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  letter-spacing: 0.02em;
+}
+.navbar-brand .dot {
+  color: #c8a46b; /* gold accent */
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("./images/hero.jpg") center/cover no-repeat;
+  margin-top: 56px; /* offset for fixed navbar */
+}
+.dark-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+.hero-button {
+  border-color: #fff;
+  font-weight: 300;
+}
+
+/* INTRO SECTION */
+.intro-heading {
+  font-family: 'Playfair Display', serif;
+  color: #f8f8f8;
+}
+.intro-heading .highlight {
+  color: #c8a46b; /* gold accent */
+}
+img.shadow {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* FEATURED SECTION */
+.featured-title {
+  font-family: 'Playfair Display', serif;
+  color: #f8f8f8;
+}
+.featured-title em {
+  font-style: italic;
+  color: #c8a46b;
+}
+.featured-img {
+  max-width: 80%;
+  border: 2px solid #333;
+}
+.featured-text {
+  line-height: 1.6;
+}
+
+/* CATEGORIES SECTION */
+.category-label {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+.list-unstyled li {
+  margin-bottom: 0.5rem;
+}
+.list-unstyled a {
+  color: #c8a46b;
+  text-decoration: none;
+}
+.list-unstyled a:hover {
+  text-decoration: underline;
+}
+
+/* ABOUT SECTION */
+.border {
+  border-color: #333 !important;
+}
+.about-block h2 {
+  font-family: 'Playfair Display', serif;
+  color: #c8a46b;
+}
+.about-block p a {
+  color: #c8a46b;
+  text-decoration: none;
+}
+.about-block p a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .featured-img {
+    max-width: 100%;
+  }
+  .intro-heading {
+    font-size: 2rem;
+  }
+  .intro-grid {
+    text-align: center;
+  }
+}
